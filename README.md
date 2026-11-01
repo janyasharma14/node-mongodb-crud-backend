@@ -98,22 +98,6 @@ Copy the `_id` returned in the response.
 - Method: `DELETE`
 - URL: `http://localhost:5000/api/products/PASTE_PRODUCT_ID_HERE`
 
-## 6. Push the project to GitHub
-
-Create a **public, empty** repository on GitHub. Do not add a README there if this folder already has one.
-
-Run these commands in the project folder, replacing the URL with your own repository URL:
-
-```bash
-git init
-git add .
-git commit -m "Build Node Express MongoDB CRUD API"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-git push -u origin main
-```
-
-Check the repository on GitHub. Confirm that source files and README are visible and `.env` is NOT present.
 
 ## Project structure
 
@@ -145,9 +129,3 @@ node-mongodb-crud-backend/
 | Update product | PUT | `/api/products/:id` |
 | Delete product | DELETE | `/api/products/:id` |
 
-## Before your evaluation
-
-- Start the server and show the successful MongoDB connection in the terminal.
-- Demonstrate each of the five API requests in Postman.
-- Explain the flow: Postman request → Express route → controller → Mongoose model → MongoDB → JSON response.
-- Be ready to explain what each folder does.
